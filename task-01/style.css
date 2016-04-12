@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .container {
     width: 100%;
     overflow: hidden;
@@ -6,14 +10,25 @@
 
 .sidebar {
 	float: left;
-	width: 15%;
-	background: #f9f9f9;
+	width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#logo {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-image: url(http://ru.wikipedia.org/static/images/project-logos/ruwiki.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .page {
-	padding-left: 10px;
+	padding: 25px;
+    margin: 70px 0px 0px 160px;
 	float: left;
-	width: 84%;
 	background: #FFF;
 	border-left: solid 1px #A7D7F9 
 }
@@ -43,6 +58,7 @@ p.italic {
 
 h4 {
  	text-align: center;
+    margin: 5px;
 }
 
 li {
@@ -50,7 +66,18 @@ li {
 }
 
 dt {
-    color: #555;
+    color: #4d4d4d;
+    margin-left: 10px;
+}
+
+dd {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 25px;
+}
+
+dd.cont {
+    margin-left: 16px;
 }
 
 .thumbimage_right {
@@ -61,4 +88,30 @@ dt {
 .thumbimage_left {
  	padding: 5px;
  	float: left;
+}
+
+table.info {
+    width: 300px;
+    float: right;
+    background-color: #f9f9f9;
+    border: 1px solid #aaa;
+}
+
+.info>caption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table.info td {
+    vertical-align: top;
+}
+
+table.info td p {
+    margin: 0 !important;
+}
+
+table.info th {
+    text-align: left;
+    padding: 3px;
+    vertical-align: top;
 }
