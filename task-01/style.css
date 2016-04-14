@@ -1,23 +1,44 @@
 body {
     margin: 0px;
+    font-family: sans-serif;
+    color: #252525;
+    line-height: 1.5;
+}
+
+a,
+.page a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #0b0080;
 }
 
 .container {
     width: 100%;
+    min-width: 400px;
     overflow: hidden;
     background: #f9f9f9;
 }
 
 .sidebar {
-	float: left;
-	width: 160px;
+    float: left;
+    width: 175px;
     position: absolute;
     top: 0px;
     left: 0px;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 #logo {
     display: block;
+    margin: auto;
     width: 160px;
     height: 160px;
     background-image: url(http://ru.wikipedia.org/static/images/project-logos/ruwiki.png);
@@ -26,39 +47,80 @@ body {
 }
 
 .page {
-	padding: 25px;
-    margin: 70px 0px 0px 160px;
-	float: left;
-	background: #FFF;
-	border-left: solid 1px #A7D7F9 
+    padding: 10px 25px;
+    margin: 70px 0px 0px 175px;
+    float: left;
+    background: #FFF;
+    border-left: solid 1px #A7D7F9;
+    font-size: 14px;
+}
+
+.page p {
+    margin: 7px 0px;
+}
+
+.photo {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc; 
+    margin: 10px;
+}
+
+.imgcap {
+    display: block;
 }
 
 h1 {
-    font-size: 200%;
-    border-bottom: 1px solid black;
+    font-size: 28px;
+    font-family: georgia;
+    color: #000;
+    border-bottom: 1px solid #aaa;
     font-weight: normal;
-    padding-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 h2 {
- 	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
 }
 
-p.italic {
- 	font-style: italic;
+p {
+    margin: 0px;
+}
+
+p.sub-link {
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 16px;
+    margin-top: 15px;
+}
+
+p.sub {
+    font-size: 13px;
 }
 
 .content { 
-    width: 400px; 
+    display: table; 
     background: #f9f9f9; 
-    padding: 5px; 
-    border: solid 2px #888; 
+    padding: 7px; 
+    border: solid 1px #aaa; 
     position: relative; 
 }
 
 h4 {
- 	text-align: center;
+    text-align: center;
     margin: 5px;
+}
+
+ul {
+    padding-left: 3px;
+}
+
+.subpar {
+    padding-left: 25px;
+}
+
+.lsubpar {
+    padding-left: 25px;
 }
 
 li {
@@ -67,37 +129,43 @@ li {
 
 dt {
     color: #4d4d4d;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-image: url("img/line.png");
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 dd {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 dd.cont {
-    margin-left: 16px;
+    margin-left: 25px;
 }
 
 .thumbimage_right {
- 	padding: 5px;
- 	float: right;
+    padding: 5px;
+    float: right;
+    clear: right;
 }
 
 .thumbimage_left {
- 	padding: 5px;
- 	float: left;
+    padding: 5px;
+    float: left;
+    clear: left;
 }
 
 table.info {
+    margin-left: 20px;
     width: 300px;
     float: right;
     background-color: #f9f9f9;
     border: 1px solid #aaa;
 }
 
-.info>caption {
+.info > caption {
     font-size: 20px;
     font-weight: bold;
 }
